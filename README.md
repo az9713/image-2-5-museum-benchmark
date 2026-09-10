@@ -17,7 +17,7 @@ A compact visual benchmark for reference-conditioned image transformation. Ten g
 | Plausibility | **4.00** |
 | Aesthetic quality | **4.10** |
 
-[Open the scored gallery](index.html) for all ten outputs, per-case dimension scores, pass/fail decisions, and concise failure analysis.
+[Open the scored gallery](https://az9713.github.io/image-2-5-museum-benchmark/) for all ten outputs, per-case dimension scores, pass/fail decisions, and concise failure analysis.
 
 ## What this project measures
 
