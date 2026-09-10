@@ -60,4 +60,4 @@ The model is better at producing aesthetically and geometrically coherent transf
 
 ## Publication boundary
 
-This public subset excludes original museum photographs, raw local manifests, provider receipts, account details, workstation paths, task identifiers, shared-chat URLs, and embedded image metadata. The generated images are included solely as benchmark outputs and should not be treated as authoritative historical reconstructions.
+This public subset excludes original full-resolution and unredacted museum photographs, raw local manifests, provider receipts, account details, workstation paths, task identifiers, shared-chat URLs, and embedded image metadata. Nine lower-resolution source derivatives are included solely to establish the input-to-output association; frames containing bystanders were cropped or visibly pixelated. The generated images are benchmark outputs and should not be treated as authoritative historical reconstructions.

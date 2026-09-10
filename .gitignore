@@ -6,6 +6,8 @@
 !assets/
 !assets/outputs/
 !assets/outputs/*.png
+!assets/sources/
+!assets/sources/*.png
 !assets/benchmark-contact-sheet.jpg
 !data/
 !data/scorecard.csv

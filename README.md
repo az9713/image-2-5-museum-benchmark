@@ -17,7 +17,7 @@ A compact visual benchmark for reference-conditioned image transformation. Ten g
 | Plausibility | **4.00** |
 | Aesthetic quality | **4.10** |
 
-[Open the scored gallery](https://az9713.github.io/image-2-5-museum-benchmark/) for all ten outputs, per-case dimension scores, pass/fail decisions, and concise failure analysis.
+[Open the scored gallery](https://az9713.github.io/image-2-5-museum-benchmark/) for all ten source-to-transformation comparisons, per-case dimension scores, pass/fail decisions, and concise failure analysis.
 
 ## What this project measures
 
@@ -70,7 +70,8 @@ The R-suffix cases use changed subjects or reduced geometric complexity after th
 ├── index.html                     # dependency-free scored gallery
 ├── assets/
 │   ├── benchmark-contact-sheet.jpg
-│   └── outputs/                   # ten metadata-stripped public derivatives
+│   ├── outputs/                   # ten metadata-stripped transformations
+│   └── sources/                   # nine sanitized source derivatives
 ├── data/
 │   ├── manifest.json              # public provenance and file hashes
 │   └── scorecard.csv              # machine-readable composite scores
@@ -88,9 +89,11 @@ The image-generation interface did not expose a stable model endpoint identifier
 
 ## Privacy and source policy
 
-This repository is a sanitized publication subset. It excludes:
+This repository is a sanitized publication subset. It includes nine lower-resolution, metadata-free source derivatives so every transformation can be compared with its actual input reference or references. Photographs containing visitors were cropped or visibly pixelated before publication.
 
-- original museum photographs, including images containing visitors;
+It excludes:
+
+- original full-resolution and unredacted museum photographs;
 - workstation paths and usernames;
 - account names and email addresses;
 - Codex task IDs and provider receipt IDs;
@@ -98,7 +101,7 @@ This repository is a sanitized publication subset. It excludes:
 - raw run manifests, contact sheets, transport images, and local audit notes;
 - embedded image metadata.
 
-The omitted source photographs remain local. Generated images are presented for model-evaluation and research discussion; historical reconstructions are labeled hypothetical where object-specific evidence is unavailable.
+The unredacted source photographs remain local. The sanitized derivatives preserve benchmark-relevant composition while preventing bystander identification. Generated images are presented for model-evaluation and research discussion; historical reconstructions are labeled hypothetical where object-specific evidence is unavailable.
 
 ## Suggested next experiment
 

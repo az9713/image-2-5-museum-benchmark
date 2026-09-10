@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "benchmark_id": "image25-museum-composite-10-v2",
   "release_type": "sanitized_public_subset",
   "created_at_utc": "2026-09-10T13:06:58.392Z",
@@ -19,20 +19,34 @@
   },
   "privacy": {
     "original_source_photographs_included": false,
+    "sanitized_source_derivatives_included": true,
+    "source_derivative_count": 9,
     "raw_run_ledgers_included": false,
     "personal_paths_or_account_identifiers_included": false,
-    "public_images_metadata_stripped": true
+    "public_images_metadata_stripped": true,
+    "bystanders_cropped_or_pixelated": true
   },
+  "source_assets": [
+    {"id":"hadrian","path":"assets/sources/hadrian.png","redaction":"label_excluding_crop_and_metadata_strip","sha256":"d0218cbd4e4fcc0f0824528def257ab0cc15d07966f584cd195c3ada5c7313d8","width":1000,"height":1050},
+    {"id":"bedroom","path":"assets/sources/bedroom-cropped.png","redaction":"bystander_excluding_crop","sha256":"1182b2b90f688249e250c973e83b06477d16c39b4815c2a14175b52d53ea17aa","width":900,"height":780},
+    {"id":"gallery","path":"assets/sources/gallery-redacted.png","redaction":"visitor_region_pixelation_and_crop","sha256":"4dbfddb3699b57ce192848a69ad0e5472cfc36f69173699bf720f5e8c678d18d","width":1400,"height":752},
+    {"id":"armor_gallery","path":"assets/sources/armor-gallery-redacted.png","redaction":"visitor_and_donor_text_pixelation_and_crop","sha256":"2ebe2665463eafce4138e1d750607bc651f111613c9f574a2cf9cc1b64ff2c66","width":1200,"height":1016},
+    {"id":"animal_mosaic","path":"assets/sources/animal-mosaic-cropped.png","redaction":"bystander_and_label_excluding_crop","sha256":"0cd21ffecd007be2a4ca8357aaa0e708f6c2165e198846c8c9a1deba73142de6","width":600,"height":780},
+    {"id":"gallery_title","path":"assets/sources/gallery-title.png","redaction":"metadata_strip_and_resize","sha256":"ba1a02a2096121745be98599513e074bf0ce20ee0ec8809676841204b5a0891c","width":900,"height":1200},
+    {"id":"amphorae","path":"assets/sources/amphorae.png","redaction":"label_excluding_crop_and_metadata_strip","sha256":"9e5ef18a8b29e6f6b709772b5b3cb0fd10f8d342b3c7f978228067dc9cdfee17","width":1200,"height":943},
+    {"id":"water_lilies","path":"assets/sources/water-lilies.png","redaction":"metadata_strip_and_resize","sha256":"b05ffc1bf8f82e86699bc449901bf5e55d9c94a50874bb1942328f6e565b7c20","width":900,"height":1200},
+    {"id":"armor_tapestry","path":"assets/sources/armor-tapestry.png","redaction":"donor_text_label_and_bystander_excluding_crop","sha256":"1a7415253f047d72c32a5eed0d931ee48f401702a62135e1738a07de106c5211","width":929,"height":1200}
+  ],
   "outputs": [
-    {"slot_id":"01","case_id":"01R","provenance":"policy_safe_proxy","task_equivalence":"not_equivalent_to_parent_01","path":"assets/outputs/01R.png","sha256":"2540f1bbbe07a3a139d099f325361b77f64858868360e8fe8a371286b9ce4e1a","width":1086,"height":1448},
-    {"slot_id":"02","case_id":"02","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/02.png","sha256":"d43f03304aee05be67e9898f8f76906b8e6fed212d5f22b382d0081259c9d312","width":1086,"height":1448},
-    {"slot_id":"03","case_id":"03R","provenance":"policy_safe_proxy","task_equivalence":"not_equivalent_to_parent_03","path":"assets/outputs/03R.png","sha256":"6b505a4e1858add368c00c44651496944e9fa7b77f9569cab8a31993df56a40e","width":1086,"height":1448},
-    {"slot_id":"04","case_id":"04","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/04.png","sha256":"146363c267eb7cb935e4c212950bc0b30620f3f8126174ea8a9fb07544bcfd50","width":1448,"height":1086},
-    {"slot_id":"05","case_id":"05","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/05.png","sha256":"d552de9b60253583bc747852396740f03a0c871c2f9052bf836aaf33236d0b11","width":1448,"height":1086},
-    {"slot_id":"06","case_id":"06","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/06.png","sha256":"6e3130742bfd3852b721a6ae06914c0869955962198e1bce1986f5d707dd54f4","width":1086,"height":1448},
-    {"slot_id":"07","case_id":"07","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/07.png","sha256":"676868f89c52c4d49dbbbf76dba6141d291a74b499e1ded43af946f34449896d","width":1086,"height":1448},
-    {"slot_id":"08","case_id":"08","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/08.png","sha256":"18f781c29e99dd36756f08182581deaf4a81248157b08bf6215dee95d06b7802","width":1254,"height":1254},
-    {"slot_id":"09","case_id":"09","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/09.png","sha256":"ee9d240382dab45f071d63aa758a84d3e4e70e275cea4eaa0935762d66929be9","width":1024,"height":1536},
-    {"slot_id":"10","case_id":"10R","provenance":"policy_safe_proxy","task_equivalence":"not_equivalent_to_parent_10","path":"assets/outputs/10R.png","sha256":"da45d46223b06219e6e2e8579fc319e0a7b3b687b78fee162b9d1537032c356a","width":1086,"height":1448}
+    {"slot_id":"01","case_id":"01R","provenance":"policy_safe_proxy","task_equivalence":"not_equivalent_to_parent_01","sources":[{"id":"hadrian","role":"head_geometry_and_damage"}],"path":"assets/outputs/01R.png","sha256":"2540f1bbbe07a3a139d099f325361b77f64858868360e8fe8a371286b9ce4e1a","width":1086,"height":1448},
+    {"slot_id":"02","case_id":"02","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","sources":[{"id":"hadrian","role":"portrait_reference"}],"path":"assets/outputs/02.png","sha256":"d43f03304aee05be67e9898f8f76906b8e6fed212d5f22b382d0081259c9d312","width":1086,"height":1448},
+    {"slot_id":"03","case_id":"03R","provenance":"policy_safe_proxy","task_equivalence":"not_equivalent_to_parent_03","sources":[{"id":"amphorae","role":"subject_and_geometry"},{"id":"water_lilies","role":"visual_language_only"}],"path":"assets/outputs/03R.png","sha256":"6b505a4e1858add368c00c44651496944e9fa7b77f9569cab8a31993df56a40e","width":1086,"height":1448},
+    {"slot_id":"04","case_id":"04","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","sources":[{"id":"bedroom","role":"scene_and_geometry"}],"path":"assets/outputs/04.png","sha256":"146363c267eb7cb935e4c212950bc0b30620f3f8126174ea8a9fb07544bcfd50","width":1448,"height":1086},
+    {"slot_id":"05","case_id":"05","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","sources":[{"id":"gallery","role":"architecture_and_layout"}],"path":"assets/outputs/05.png","sha256":"d552de9b60253583bc747852396740f03a0c871c2f9052bf836aaf33236d0b11","width":1448,"height":1086},
+    {"slot_id":"06","case_id":"06","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","sources":[{"id":"hadrian","role":"geometry_and_surface"}],"path":"assets/outputs/06.png","sha256":"6e3130742bfd3852b721a6ae06914c0869955962198e1bce1986f5d707dd54f4","width":1086,"height":1448},
+    {"slot_id":"07","case_id":"07","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","sources":[{"id":"armor_gallery","role":"gallery_and_artwork_layout"}],"path":"assets/outputs/07.png","sha256":"676868f89c52c4d49dbbbf76dba6141d291a74b499e1ded43af946f34449896d","width":1086,"height":1448},
+    {"slot_id":"08","case_id":"08","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","sources":[{"id":"animal_mosaic","role":"left_mosaic_fragment"}],"path":"assets/outputs/08.png","sha256":"18f781c29e99dd36756f08182581deaf4a81248157b08bf6215dee95d06b7802","width":1254,"height":1254},
+    {"slot_id":"09","case_id":"09","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","sources":[{"id":"hadrian","role":"focal_artwork"},{"id":"gallery_title","role":"editorial_context"}],"path":"assets/outputs/09.png","sha256":"ee9d240382dab45f071d63aa758a84d3e4e70e275cea4eaa0935762d66929be9","width":1024,"height":1536},
+    {"slot_id":"10","case_id":"10R","provenance":"policy_safe_proxy","task_equivalence":"not_equivalent_to_parent_10","sources":[{"id":"armor_tapestry","role":"armor_and_gallery"},{"id":"water_lilies","role":"painting_and_color"}],"path":"assets/outputs/10R.png","sha256":"da45d46223b06219e6e2e8579fc319e0a7b3b687b78fee162b9d1537032c356a","width":1086,"height":1448}
   ]
 }
