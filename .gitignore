@@ -1,0 +1,14 @@
+# Privacy-first allowlist: the local evidence workspace remains untracked.
+*
+!.gitignore
+!README.md
+!index.html
+!assets/
+!assets/outputs/
+!assets/outputs/*.png
+!assets/benchmark-contact-sheet.jpg
+!data/
+!data/scorecard.csv
+!data/manifest.json
+!docs/
+!docs/report.md

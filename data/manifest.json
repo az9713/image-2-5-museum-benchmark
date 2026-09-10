@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "image25-museum-composite-10-v2",
+  "release_type": "sanitized_public_subset",
+  "created_at_utc": "2026-09-10T13:06:58.392Z",
+  "composition": {
+    "total_outputs": 10,
+    "parent_v1_originals": 7,
+    "policy_safe_proxies": 3,
+    "strict_passes": 6,
+    "composite_mean": 3.97
+  },
+  "evaluation": {
+    "formula": "S = 0.30F + 0.25I + 0.20G + 0.15P + 0.10A",
+    "pass_rule": "S >= 3.50 AND F >= 3 AND I >= 3 AND all critical conditions pass AND no hard failure",
+    "new_generation_for_release": false,
+    "fresh_blind_rescoring_for_release": false,
+    "aggregation_only": true
+  },
+  "privacy": {
+    "original_source_photographs_included": false,
+    "raw_run_ledgers_included": false,
+    "personal_paths_or_account_identifiers_included": false,
+    "public_images_metadata_stripped": true
+  },
+  "outputs": [
+    {"slot_id":"01","case_id":"01R","provenance":"policy_safe_proxy","task_equivalence":"not_equivalent_to_parent_01","path":"assets/outputs/01R.png","sha256":"2540f1bbbe07a3a139d099f325361b77f64858868360e8fe8a371286b9ce4e1a","width":1086,"height":1448},
+    {"slot_id":"02","case_id":"02","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/02.png","sha256":"d43f03304aee05be67e9898f8f76906b8e6fed212d5f22b382d0081259c9d312","width":1086,"height":1448},
+    {"slot_id":"03","case_id":"03R","provenance":"policy_safe_proxy","task_equivalence":"not_equivalent_to_parent_03","path":"assets/outputs/03R.png","sha256":"6b505a4e1858add368c00c44651496944e9fa7b77f9569cab8a31993df56a40e","width":1086,"height":1448},
+    {"slot_id":"04","case_id":"04","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/04.png","sha256":"146363c267eb7cb935e4c212950bc0b30620f3f8126174ea8a9fb07544bcfd50","width":1448,"height":1086},
+    {"slot_id":"05","case_id":"05","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/05.png","sha256":"d552de9b60253583bc747852396740f03a0c871c2f9052bf836aaf33236d0b11","width":1448,"height":1086},
+    {"slot_id":"06","case_id":"06","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/06.png","sha256":"6e3130742bfd3852b721a6ae06914c0869955962198e1bce1986f5d707dd54f4","width":1086,"height":1448},
+    {"slot_id":"07","case_id":"07","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/07.png","sha256":"676868f89c52c4d49dbbbf76dba6141d291a74b499e1ded43af946f34449896d","width":1086,"height":1448},
+    {"slot_id":"08","case_id":"08","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/08.png","sha256":"18f781c29e99dd36756f08182581deaf4a81248157b08bf6215dee95d06b7802","width":1254,"height":1254},
+    {"slot_id":"09","case_id":"09","provenance":"parent_v1_original","task_equivalence":"original_frozen_task","path":"assets/outputs/09.png","sha256":"ee9d240382dab45f071d63aa758a84d3e4e70e275cea4eaa0935762d66929be9","width":1024,"height":1536},
+    {"slot_id":"10","case_id":"10R","provenance":"policy_safe_proxy","task_equivalence":"not_equivalent_to_parent_10","path":"assets/outputs/10R.png","sha256":"da45d46223b06219e6e2e8579fc319e0a7b3b687b78fee162b9d1537032c356a","width":1086,"height":1448}
+  ]
+}

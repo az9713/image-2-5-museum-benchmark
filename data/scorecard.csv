@@ -1,0 +1,11 @@
+slot_id,case_id,provenance,F,G,I,P,A,S,critical_conditions,pass,diagnostic
+01,01R,policy_safe_proxy,4,5,4,4,4,4.20,4/4,true,"Damaged-head identity is preserved with a coherent fully draped completion."
+02,02,parent_v1_original,4,4,5,4,4,4.25,4/4,true,"Hadrian remains recognizable in a restrained hypothetical Roman atrium."
+03,03R,policy_safe_proxy,4,4,2,4,4,3.50,3/4,false,"Vessel geometry survives, but literal pond content leaks from the style reference."
+04,04,parent_v1_original,5,4,5,5,4,4.70,4/4,true,"The painted bedroom becomes a convincing physical room while preserving layout."
+05,05,parent_v1_original,4,5,5,5,4,4.60,4/4,true,"Visitors are removed while architecture and plausible after-hours lighting remain coherent."
+06,06,parent_v1_original,4,4,4,3,4,3.85,4/4,true,"Damage survives restrained hypothetical polychromy; object-specific colors remain unverified."
+07,07,parent_v1_original,3,3,3,3,4,3.10,3/4,false,"Coordinated artwork motions are ambiguous and central source content drifts."
+08,08,parent_v1_original,2,4,3,3,4,3.00,3/4,false,"The mosaic is coherent, but the defining camel pose and a source form change."
+09,09,parent_v1_original,4,5,5,5,5,4.70,4/4,true,"The poster preserves identity and renders both exact text blocks cleanly."
+10,10R,policy_safe_proxy,4,4,3,4,4,3.75,2/4,false,"A narrow color ribbon becomes a broad cascade, and forbidden text remains."
